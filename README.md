@@ -1,8 +1,9 @@
 # Proje Kurulumu 
 1. composer install
-2. ./vendor/bin/sail up -d
-3. ./vendor/bin/sail migrate
-4. ./vendor/bin/sail db:seed
+2. cp .env.example .env
+3. ./vendor/bin/sail up -d
+4. ./vendor/bin/sail migrate
+5. ./vendor/bin/sail db:seed
 
 # Uygulama arayüzü
 http://localhost üzerinden uygulama arayüzüne erişebilirsiniz.
@@ -45,3 +46,5 @@ Mysql üzerinde logları yazdırdım. AppServiceProvider üzerinde mysql'e yazd�
 5. Kullanıcıya response (Resource) dönülür
 6. Burada Her isteği karşılayan bir controller bulunmaktadır. Controllerlar ilgili Service sınıfını DI ile kullanılır
 7. Her Service bir Repository sınıfı DI ile barındırır ve veritabanı işlemleri burada gerçekleşir.
+
+Graylog kurulumunda docker ile ilgili bazı problemlere takıldığım için geri aldım.
